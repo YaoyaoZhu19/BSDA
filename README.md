@@ -2,9 +2,9 @@
 
 # BRSDA
 
-A Bayesian Random Semantic Data Augmentation (BRSDA)  algorithm implement in Pytorch。
+Bayesian Random Semantic Data Augmentation (BRSDA)  algorithm implement in Pytorch。
 
-* [A Bayesian Random Semantic Data Augmentation for Medical Image Analysis]()
+* [Bayesian Random Semantic Data Augmentation for Medical Image Analysis](https://arxiv.org/abs/2403.06138)
 * 
 
 
