@@ -1,4 +1,4 @@
-**code is available**
+**Our code will be available if the paper is accepted.**
 
 # BRSDA
 
