@@ -23,8 +23,16 @@ python train_bsda.py --resize --bsda --bsda_lambda 0.8  --bsda_multi 10 --bsda_u
 ```
 from networks.bsda_warp import BSDAWarp
 
+data_info = {
+        'n_channels': 1,
+        'bsda_lambda': args.bsda_lambda, 
+        'bsda_multi': args.bsda_multi, 
+        'bsda_use_ori': args.bsda_use_ori,
+        'isda_lambda': args.isda_lambda
+    }
+
 model = Backbone()
-bsda_warp = BSDAWarp(model, num_classes, multi=10, lambda=0.8)
+bsda_warp = BSDAWarp(model, num_classes, data_info)
 
 ...
 # Training

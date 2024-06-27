@@ -24,9 +24,9 @@ class BSDAWarp(nn.Module):
         self.use_ori = info['bsda_use_ori']
         self.bsda_lambda = info['bsda_lambda']
         self.n_channels = info['n_channels']
-        self.train_eval = info['train_evaluator']
-        self.val_eval = info['val_evaluator']
-        self.test_eval = info['test_evaluator']
+        # self.train_eval = info['train_evaluator']
+        # self.val_eval = info['val_evaluator']
+        # self.test_eval = info['test_evaluator']
         
         # 分类线性层网络
         self.linear = nn.Linear(self.feature_dim, num_classes)
