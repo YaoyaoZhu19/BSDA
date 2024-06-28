@@ -50,10 +50,13 @@ loss = bsda_warp.get_loss(outputs, targets, criterion, is_train=True)
 
 ## Citation
 ```
-@article{zhu2024bayesian,
-  title={Bayesian Random Semantic Data Augmentation for Medical Image Classification},
-  author={Zhu, Yaoyao and Cai, Xiuding and Wang, Xueyao and Yao, Yu},
-  journal={arXiv preprint arXiv:2403.06138},
-  year={2024}
+@misc{zhu2024bsdabayesianrandomsemantic,
+      title={BSDA: Bayesian Random Semantic Data Augmentation for Medical Image Classification}, 
+      author={Yaoyao Zhu and Xiuding Cai and Xueyao Wang and Xiaoqing Chen and Yu Yao and Zhongliang Fu},
+      year={2024},
+      eprint={2403.06138},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2403.06138}, 
 }
 ```
