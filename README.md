@@ -28,16 +28,16 @@ data_info = {
         'bsda_lambda': args.bsda_lambda, 
         'bsda_multi': args.bsda_multi, 
         'bsda_use_ori': args.bsda_use_ori,
-        'isda_lambda': args.isda_lambda
     }
 
 model = Backbone()
 bsda_warp = BSDAWarp(model, num_classes, data_info)
 
 ...
-# Training
+# Training a epoch
+ratio = min(alpha * (epoch / (max_epoch // 2)), alpha)
 outputs = bsda_warp(x, is_train=True) 
-loss = bsda_warp.get_loss(outputs, targets, criterion, is_train=True)
+loss = bsda_warp.get_loss(outputs, targets, criterion, bsda_alpha=ratio, is_train=True)
 
 # forward loss
 ...
